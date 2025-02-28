@@ -50,21 +50,14 @@ header {
   background-color: rgba(0, 0, 0, 0.9); /* 90% opaque black background */
   width: 45%; /* Make it 45% of the container */
   max-width: 600px; /* Limit the width of the box */
+  cursor: pointer; /* Make the box look like a clickable button */
+  opacity: 0.9; /* Initial opacity of 0.5 */
+  transition: opacity 0.3s ease, background-color 0.3s ease; /* Smooth transition */
 }
 
-#general-instructions h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-#general-instructions ul {
-  list-style-type: none;
-  font-size: 1.1rem;
-  padding-left: 0; /* Remove default padding */
-}
-
-#general-instructions ul li {
-  margin: 10px 0;
+#general-instructions:hover {
+  opacity: 1; /* On hover, set opacity to 1 */
+  background-color: rgba(0, 0, 0, 0); /* Make the background transparent on hover */
 }
 
 /* New Text Box for Internship Info */
@@ -83,6 +76,14 @@ header {
   transform: scale(1); /* Ensure visible from the start */
   position: relative;
   top: 0; /* Ensure it's at the correct position */
+  cursor: pointer; /* Make the box look like a clickable button */
+  opacity: 0.9; /* Initial opacity of 0.5 */
+  transition: opacity 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+.internship-box:hover {
+  opacity: 0.9; /* On hover, set opacity to 1 */
+  background-color: rgba(0, 0, 0, 0); /* Make the background transparent on hover */
 }
 
 /* Parallelogram Box Container */
@@ -96,7 +97,7 @@ header {
 /* Parallelogram Styles */
 .parallelogram-left, .parallelogram-right {
   position: relative;
-  height: 200px; /* Adjusted height */
+  height: 170px; /* Reduced height by 30px */
   background-color: rgba(0, 0, 0, 0.9); /* 90% opaque black background */
   margin: 0 15px;
   text-align: center;
@@ -112,7 +113,10 @@ header {
   word-wrap: break-word; /* Allows long words to break into the next line */
   word-break: break-word; /* Prevents overflow */
   transform: skew(-20deg); /* Make the box a parallelogram */
-  width: 500px; /* Extended width for the boxes */
+  width: 36%; /* Reduced width by 70px (40px + 30px) from 42% */
+  cursor: pointer; /* Make the boxes look like clickable buttons */
+  opacity: 0.9; /* Initial opacity of 0.5 */
+  transition: opacity 0.3s ease, background-color 0.3s ease; /* Smooth transition */
 }
 
 /* Ensure the text inside is horizontal */
@@ -125,58 +129,11 @@ header {
   width: 100%;
 }
 
-/* Parallelogram Box Adjustments */
-.parallelogram-left {
-  margin-left: -150px; /* Increased left margin to push the box further to the left */
-  margin-bottom: 30px; /* 30px gap between boxes */
-  width: 650px; /* Increased width for the left box */
-}
-
-.parallelogram-right {
-  margin-left: 100px; /* Shift the right box to the right */
-  margin-bottom: 30px; /* 30px gap between boxes */
-  width: 650px; /* Increased width for the right box */
-  padding: 20px; /* Padding inside box */
-  text-align: left; /* Left-align text */
-}
-
-/* Cash Prize Section */
-#cash-prize {
-  text-align: center;
-  padding: 30px;
-  border-bottom: 2px solid white;
-  background-color: rgba(0, 0, 0, 0.9); /* 90% opaque black background */
-}
-
-#cash-prize h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-#cash-prize p {
-  font-size: 1.2rem;
-}
-
-/* E-Certificate Section */
-#e-certificate {
-  text-align: center;
-  padding: 30px;
-  border-bottom: 0px solid white;
-  background-color: rgba(0, 0, 0, 0.9); /* 90% opaque black background */
-}
-
-#e-certificate h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  white-space: nowrap; /* Ensure the header stays on one line */
-  overflow: hidden;
-  text-overflow: ellipsis; /* Optional, in case of overflow */
-}
-
-#e-certificate p {
-  font-size: 1.2rem;
-  line-height: 1.5; /* Adjusted line height for better readability */
-  padding: 10px;
+/* Hover Effect */
+.parallelogram-left:hover,
+.parallelogram-right:hover {
+  opacity: 1; /* On hover, set opacity to 1 */
+  background-color: rgba(0, 0, 0, 0); /* Make the background transparent on hover */
 }
 
 /* Footer Styling */
@@ -200,5 +157,14 @@ footer p {
   #general-instructions, .internship-box {
     width: 80%; /* Adjust width on smaller screens */
     max-width: none; /* Remove max-width limitation */
+  }
+
+  .hexagon-container {
+    flex-direction: column;
+    align-items: center; /* Stack boxes vertically */
+  }
+
+  .parallelogram-left, .parallelogram-right {
+    width: 80%; /* Adjust width on mobile */
   }
 }
