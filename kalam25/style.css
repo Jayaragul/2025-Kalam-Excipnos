@@ -33,96 +33,113 @@ header {
   margin-bottom: 20px;
 }
 
-/* General Instructions and Internship Section */
-#instructions-and-internship {
+/* Buttons Container */
+#buttons-container {
   display: flex;
-  justify-content: space-between; /* Space both boxes */
-  width: 100%;
-  padding: 40px 0;
-  margin: 0 auto;
+  justify-content: space-between;
+  margin: 100px 0 40px;
+  padding: 0 20px;
 }
 
-/* General Instructions Section */
-#general-instructions {
-  padding: 30px;
+/* Button Box (Common styling for all buttons) */
+.button-box {
+  padding: 15px;
   text-align: center;
-  border-radius: 15px; /* Rounded corners */
-  background-color: rgba(0, 0, 0, 0.9); /* 90% opaque black background */
-  width: 45%; /* Make it 45% of the container */
-  max-width: 600px; /* Limit the width of the box */
-  cursor: pointer; /* Make the box look like a clickable button */
-  opacity: 0.9; /* Initial opacity of 0.5 */
-  transition: opacity 0.3s ease, background-color 0.3s ease; /* Smooth transition */
-}
-
-#general-instructions:hover {
-  opacity: 1; /* On hover, set opacity to 1 */
-  background-color: rgba(0, 0, 0, 0); /* Make the background transparent on hover */
-}
-
-/* New Text Box for Internship Info */
-.internship-box {
-  padding: 30px;
-  background-color: rgba(0, 0, 0, 0.9); /* 90% opaque black background */
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.9);
   color: white;
-  border-radius: 8px;
-  font-size: 2.2rem;
-  font-weight: bold;
+  width: 250px;  /* Adjusted for better size */
+  height: auto; /* Height is set to auto to allow content to fit */
+  margin: 0 20px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-  width: 45%; /* Make it the same size as the general instructions box */
-  max-width: 600px;
-  text-align: center;
-  transition: transform 0.6s ease-out; /* Slow zoom-in transition */
-  transform: scale(1); /* Ensure visible from the start */
-  position: relative;
-  top: 0; /* Ensure it's at the correct position */
-  cursor: pointer; /* Make the box look like a clickable button */
-  opacity: 0.9; /* Initial opacity of 0.5 */
-  transition: opacity 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+  overflow: auto; /* Ensure content doesn't overflow */
 }
 
-.internship-box:hover {
-  opacity: 0.9; /* On hover, set opacity to 1 */
-  background-color: rgba(0, 0, 0, 0); /* Make the background transparent on hover */
+.button-box h2 {
+  font-size: 22px;
+  margin: 0;
 }
+
+.button-description {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Adjusted content and box-shadow hover effect */
+.button-box:hover,
+.button-box:active {
+  box-shadow: 0px 0px 20px 4px rgba(255, 255, 255, 0.7); /* White shadow */
+}
+
+
+/* Tick Mark Styling */
+.tick-mark {
+  margin-right: 10px; 
+  font-size: 1.5rem;  
+}
+/* Image Styling */
+.trophy-image,
+.loot-bag-image,
+.medal-image {
+  width: 120px; /* Adjust the size of the images */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0.5rem 0; /* Space above and below the image */
+  display: inline-block; /* Ensure the image is inline */
+}
+
+/* Optional: Add hover effects */
+.button-box:hover .trophy-image,
+.button-box:hover .loot-bag-image,
+.button-box:hover .medal-image {
+  transform: scale(1.1); /* Slightly increase the size on hover */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+
 
 /* Parallelogram Box Container */
 .hexagon-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; /* Ensure that items wrap when needed */
+  flex-wrap: wrap; 
   margin-top: 40px;
 }
 
 /* Parallelogram Styles */
 .parallelogram-left, .parallelogram-right {
   position: relative;
-  height: 170px; /* Reduced height by 30px */
-  background-color: rgba(0, 0, 0, 0.9); /* 90% opaque black background */
+  height: 170px;
+  background-color: rgba(0, 0, 0, 0.9);
   margin: 0 15px;
   text-align: center;
-  color: white; /* White text for contrast */
+  color: white; 
   border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-  font-size: 1.2rem; /* Adjusted font size for better readability */
-  line-height: 1.4; /* Slightly increased line height for better text flow */
-  word-wrap: break-word; /* Allows long words to break into the next line */
-  word-break: break-word; /* Prevents overflow */
-  transform: skew(-20deg); /* Make the box a parallelogram */
-  width: 36%; /* Reduced width by 70px (40px + 30px) from 42% */
-  cursor: pointer; /* Make the boxes look like clickable buttons */
-  opacity: 0.9; /* Initial opacity of 0.5 */
-  transition: opacity 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+  font-size: 1.2rem; 
+  line-height: 1.4; 
+  word-wrap: break-word; 
+  word-break: break-word;
+  transform: skew(-20deg); 
+  width: 36%; 
+  cursor: pointer; 
+  opacity: 0.9; 
+  transition: opacity 0.3s ease, background-color 0.3s ease; 
 }
 
 /* Ensure the text inside is horizontal */
 .parallelogram-left p,
 .parallelogram-right p {
-  transform: skew(20deg); /* Counteract the skew on the text */
+  transform: skew(20deg);
   margin: 0;
   padding: 10px;
   text-align: center;
@@ -132,8 +149,9 @@ header {
 /* Hover Effect */
 .parallelogram-left:hover,
 .parallelogram-right:hover {
-  opacity: 1; /* On hover, set opacity to 1 */
-  background-color: rgba(0, 0, 0, 0); /* Make the background transparent on hover */
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0); 
+  box-shadow: 0px 0px 20px 4px rgba(255, 255, 255, 0.7); 
 }
 
 /* Footer Styling */
@@ -141,6 +159,7 @@ footer {
   text-align: center;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.8);
+  margin-top: 30px; 
 }
 
 footer p {
@@ -149,22 +168,13 @@ footer p {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-  #instructions-and-internship {
+  #buttons-container {
     flex-direction: column;
     align-items: center;
   }
 
-  #general-instructions, .internship-box {
-    width: 80%; /* Adjust width on smaller screens */
-    max-width: none; /* Remove max-width limitation */
-  }
-
-  .hexagon-container {
-    flex-direction: column;
-    align-items: center; /* Stack boxes vertically */
-  }
-
-  .parallelogram-left, .parallelogram-right {
-    width: 80%; /* Adjust width on mobile */
+  .button-box {
+    width: 80%; 
+    margin: 10px 0;
   }
 }

@@ -19,29 +19,55 @@
     </div>
   </header>
 
-  <!-- General Instructions and Internship Section -->
-  <section id="instructions-and-internship">
-    <!-- General Instructions Section -->
-    <div id="general-instructions">
-      <h2>GENERAL INSTRUCTIONS</h2>
-      <ul>
-        <li>Candidates must bring their own laptop.</li>
-        <li>Participants can submit completed projects.</li>
-        <li>Refreshments will be provided.</li>
-        <li>Internet will be provided.</li>
-      </ul>
+  <!-- General Instructions, Internship, Cash Prize, and E-Certificate Section -->
+  <section id="buttons-container">
+    <!-- General Instructions -->
+    <div id="general-instructions" class="button-box">
+      <h2 class="button-header">GENERAL INSTRUCTIONS</h2>
+      <p class="button-description">
+        <span class="tick-mark">✔</span> Candidates must bring their own laptop.<br>
+        <span class="tick-mark">✔</span> Participants can submit completed projects.<br>
+        <span class="tick-mark">✔</span> Refreshments will be provided.<br>
+        <span class="tick-mark">✔</span> Internet will be provided.
+      </p>
     </div>
-    
-    <!-- Internship Box -->
-    <div class="internship-box">
-      <p><strong>INTERNSHIP WILL BE PROVIDED <br>TO THE WINNER<br> FROM TOP COMPANIES</strong></p>
+
+    <!-- Internship -->
+    <div class="internship-box button-box">
+      <h2 class="button-header">INTERNSHIP</h2>
+         <!-- Image for Trophy -->
+        <img src="images/trophy.png" alt="Trophy" class="trophy-image">
+    <p class="button-description">
+        Internship will be provided to the winner from top companies.
+      </p>
+    </div>
+
+    <!-- Cash Prize -->
+    <div class="cash-prize-box button-box">
+      <h2 class="button-header">CASH PRIZE</h2>
+        <!-- Image for Loot Bag -->
+  <img src="images/loot-bag.png" alt="Loot Bag" class="loot-bag-image">
+      <p class="button-description">
+        The winners will receive an exciting cash prize.
+      </p>
+    </div>
+
+    <!-- E-Certificate -->
+    <div class="e-certificate-box button-box">
+      <h2 class="button-header">E-CERTIFICATE</h2>
+      <!-- Image for Medal -->
+  <img src="images/medal.png" alt="Medal" class="medal-image">
+
+      <p class="button-description">
+        All participants will receive an e-certificate of participation.
+      </p>
     </div>
   </section>
 
   <!-- Parallelogram Boxes for Rounds -->
   <section class="hexagon-container">
     <div class="parallelogram-left">
-      <h2>Round 1: PRESENTATION</h2>
+      <h2 >Round 1: PRESENTATION</h2>
       <p>This round focuses on your presentation skills. You will need to present your ideas clearly, 
         explain your project's vision, and provide a live demonstration of its functionality.</p>
     </div>
@@ -52,40 +78,29 @@
       <h2>Round 2: PROTOTYPE</h2>
       <p>In this round, you will need to build a functional prototype of your project. The prototype must be 
         a working model that demonstrates your project's core functionality and feasibility.</p>
-   </div>
+    </div>
   </section>
 
   <section class="hexagon-container">
     <div class="parallelogram-left">
-      <h2>Round 3: VALIDATION</h2>
-      <p>This is the final round where the judges will validate your idea based on real-world scenarios. You 
-        will need to justify how your project solves a real-world problem effectively.</p>
-   </div>
-  </section>
-
-  <!-- E-Certificate and Cash Prize Boxes below Round 3 -->
-  <section id="e-certificate-and-cash-prize" class="hexagon-container">
-    <!-- Cash Prize Box (Left Side) -->
-    <div class="parallelogram-left">
-      <h2>Cash Prize</h2>
-      <p>The winners of the hackathon will<br> receive an exciting cash prize!<br> The exact amount will be announced soon.</p>
-    </div>
-
-    <!-- E-Certificate Box (Right Side) -->
-    <div class="parallelogram-right">
-      <h2>E-Certificate</h2>
-      <p>All participants will receive an e-certificate <br>of participation. It's a great way to showcase<br> your skills and involvement in the event!</p>
+      <h2>Round 3: VALIDATION AND WORKING MODEL</h2>
+      <p>This is the final round where the participants need to show their working model of their project and the judges evaluate based on the problem solved for the real world scenario.</p>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer id="contact" class="w-full bg-gray-900 py-4 flex flex-col items-center justify-center">
-    <p class="text-white text-sm mb-2">Made by <span class="font-semibold">AI&DS Tech Team</span></p>
-    <div class="flex space-x-4">
-      <a href="https://www.instagram.com/team_exypnos_?igsh=aWFudWFjczg2ZDF6" target="_blank">
-          <img src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png" 
-               alt="Instagram" class="h-8 transition-transform transform hover:scale-110">
-      </a>
+  <footer id="contact" class="footer-container">
+    <div class="footer-content">
+        <p class="footer-text">
+            Made by <span class="footer-highlight">AI&DS Tech Team</span>
+        </p>
+        <div class="footer-icons">
+            <a href="https://www.instagram.com/team_exypnos_?igsh=aWFudWFjczg2ZDF6" target="_blank" 
+               class="icon-link">
+                <img src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png" 
+                     alt="Instagram" class="icon-img">
+            </a>
+        </div>
     </div>
   </footer>
 </body>
