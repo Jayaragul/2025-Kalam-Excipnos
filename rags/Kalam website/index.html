@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Truth in Pixels - AI Showdown</title>
+    <title><h6>Truth in Pixels - AI Showdown</h></title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #0e0e0e;
+            background: url('WhatsApp Image 2025-02-27 at 11.40.14_76ba4e35.jpg');
+            background-attachment: fixed;
             color: white;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #1a1a1a;
+            background-color: rgba(26, 26, 26, 0.8);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -34,32 +35,32 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 50px 20px;
-            background: rgba(0, 0, 0, 0.3);
+            background: rgba(0, 0, 0, 0.7);
             border-radius: 10px;
             text-align: center;
-        }
-        #hero {
-            background: url('WhatsApp Image 2025-02-27 at 11.40.14_76ba4e35.jpg') no-repeat center center/cover;
-            padding: 100px 20px;
-            border-radius: 10px;
         }
         .event-levels {
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two columns */
+            grid-template-rows: auto auto; /* Two rows */
             gap: 20px;
-            flex-wrap: wrap;
+            justify-items: center;
         }
-        .event-level {
-            background: rgba(255, 255, 255, 0.3);
-            padding: 20px;
-            border-radius: 10px;
-            width: 32%;
-            text-align: center;
-            transition: transform 0.3s ease, background 0.3s ease;
+        .event-level:first-child {
+            grid-column: span 2; /* Level 1 spans both columns */
+                width: 50%; /* Centered width */
         }
-        .event-level:hover {
-            transform: scale(1.05);
-            background: rgba(255, 255, 255, 0.3);
+            .event-level {
+                background: rgba(0, 0, 0, 0.7);
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+                transition: transform 0.3s ease, background 0.3s ease;
+                width: 80%; /* Adjust width as needed */
+        }
+            .event-level:hover {
+                transform: scale(1.05);
+                background: rgba(255, 255, 255, 0.3);
         }
         .cta {
             background-color: #ff5722;
@@ -74,11 +75,15 @@
         #prizes {
             padding: 20px 20px;
         }
+            /* Footer Styling */
         footer {
-            background-color: #1a1a1a;
-            padding: 20px;
-            text-align: center;
-            margin-top: 20px;
+        text-align: center;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        footer p {
+        font-size: 1rem;
         }
     </style>
 </head>
@@ -92,7 +97,7 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
-    
+    <br>
     <section id="hero" class="container">
         <h2>Unleash Your AI Creativity!</h2>
         <p>Join the ultimate AI-powered showdown where wit, strategy, and technology collide.</p>
@@ -103,36 +108,60 @@
         <h2>Event Structure</h2>
         <div class="event-levels">
             <div class="event-level">
-                <h3>Level 1: AI MEME WAR</h3>
-                <p>Create hilarious AI-generated memes.</p>
+                <h3 style="color: rgb(103, 96, 12);">Level 1: AI MEME WAR</h3>
+                <p>Create hilarious AI-generated memes
+                    <br>✅Teams will receive a theme.
+`                   <br>✅Use AI image generation tools to create hilarious and visually appealing images.
+                    <br>✅Add captions using AI-powered prompts.
+                    <br>✅The funniest and most creative memes win!</p>
             </div>
             <div class="event-level">
-                <h3>Level 2: AI ILLUSION</h3>
-                <p>Generate unique and untraceable AI illusions.</p>
+                <h3 style="color: rgb(103, 96, 12);">Level 2: AI ILLUSION</h3>
+                <p> 🎭 Mastering AI’s Trickery<br>
+                     ✅A theme will be provided.<br>
+                     ✅Generate both AI images and videos using multiple AI tools.<br>
+                     ✅The goal:Make them so unique and untraceable that no one can determine their origin.<br>
+                     ✅Acuracy and uniqueness will determine the winners.<br>
+
+                </p>
             </div>
             <div class="event-level">
-                <h3>Level 3: AI BOT ARENA</h3>
-                <p>Train AI chatbots to battle in debates.</p>
+                <h3 style="color:rgb(144, 134, 43)">Level 3: AI BOT ARENA</h3>
+                    <p>🤖 Train & Battle AI Chatbots<br>
+                        ✅A summarized paragraph on a tech topic will be provided.<br>
+                        ✅Participants must train AI-powered chatbots using Dialogflow Console to engage in a debate.<br>
+                        ✅The bots will compete in a debate, responding logically, humorously, and creatively.</p>
+                        ✅Train AI chatbots to battle in debates.</p>
             </div>
         </div>
     </section>
     
     <section id="prizes" class="container">
         <h2>Prizes & Recognition</h2>
-        <p>🏆 Exciting prizes, certificates, and bragging rights await the winners.</p>
+        <p>🏆 Cash prizes, certificates, and bragging rights await the winners.</p>
         <p>🏅 Special awards for Best Meme Creator, AI Trickster, and Ultimate Bot Debater.</p>
     </section>
     
     <section id="register" class="container">
         <h2>Register Now</h2>
-        <p>📅 Event Date: [Insert Date]</p>
-        <p>📍 Venue: [Insert Venue]</p>
+        <p>📅 Event Date: 21.03.2025</p>
+        <p>📍 Venue: Sri Shakthi Institute of engineering and technology </p>
         <a href="#" class="cta">Sign Up Here</a>
     </section>
-    
-    <footer id="contact">
-        <h2>Contact</h2>
-        <p>📞 Organizer Contact: [Insert Contact Info]</p>
-    </footer>
+    <!-- Footer -->
+<footer id="contact" class="w-full bg-gray-900 py-4 flex flex-col items-center justify-center">
+    <p class="text-white text-sm mb-2">Made by <span class="font-semibold">AI&DS Tech Team</span></p>
+    <div class="flex space-x-4">
+        <a href="https://www.instagram.com/team_exypnos_?igsh=aWFudWFjczg2ZDF6" target="_blank">
+            <img src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png" 
+                 alt="Instagram" class="h-8 transition-transform transform hover:scale-110">
+        </a>
+        <a href="https://www.linkedin.com/in/jayaragul-n/" target="_blank">
+            <img src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin.png" 
+                 alt="LinkedIn" class="h-8 transition-transform transform hover:scale-110">
+        </a>
+    </div>
+</footer>
+
 </body>
 </html>
